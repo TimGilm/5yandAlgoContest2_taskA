@@ -14,7 +14,6 @@ func main() {
 	k, _ := strconv.Atoi(s.Text())
 	var arrX []int
 	var arrY []int
-	var square [][2]int
 
 	for i := 0; i < k; i++ {
 		var point [2]int
@@ -30,7 +29,6 @@ func main() {
 		arrY = append(arrY, y)
 		point[0] = x
 		point[1] = y
-		square = append(square, point)
 	}
 	minX := findMinX(arrX)
 	maxX := findMaxX(arrX)
